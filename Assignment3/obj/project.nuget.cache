@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "yT85MgDNI2VnxYV3OL2EmOVa47wG2eBdyGy2Tu/Ro8g5xlleGbx5rDxkHn8uaQYaBDxZqLAt9JRlYHAEi1RNqA==",
+  "dgSpecHash": "/J/KF+Ohz81Cji40eO1fWqVFF12KEF2J8Bfm9KF3Ezhz3APFlsEJTBVHWk1KJ81VlUvhHSaTqxJElSUVD2KLwQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\deniz\\OneDrive\\Dokumenter\\GitHub\\Assignment3\\Assignment3\\Assignment3.csproj",
+  "projectFilePath": "C:\\Users\\jakob\\Documents\\bdsa\\Assignment3\\Assignment3\\Assignment3.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\deniz\\.nuget\\packages\\csvhelper\\27.1.1\\csvhelper.27.1.1.nupkg.sha512"
+    "C:\\Users\\jakob\\.nuget\\packages\\csvhelper\\27.1.1\\csvhelper.27.1.1.nupkg.sha512"
   ],
   "logs": []
 }

@@ -43,24 +43,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\deniz\\.nuget\\packages\\": {}
+    "C:\\Users\\jakob\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\deniz\\OneDrive\\Dokumenter\\GitHub\\Assignment3\\Assignment3\\Assignment3.csproj",
+      "projectUniqueName": "C:\\Users\\jakob\\Documents\\bdsa\\Assignment3\\Assignment3\\Assignment3.csproj",
       "projectName": "Assignment3",
-      "projectPath": "C:\\Users\\deniz\\OneDrive\\Dokumenter\\GitHub\\Assignment3\\Assignment3\\Assignment3.csproj",
-      "packagesPath": "C:\\Users\\deniz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\deniz\\OneDrive\\Dokumenter\\GitHub\\Assignment3\\Assignment3\\obj\\",
+      "projectPath": "C:\\Users\\jakob\\Documents\\bdsa\\Assignment3\\Assignment3\\Assignment3.csproj",
+      "packagesPath": "C:\\Users\\jakob\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jakob\\Documents\\bdsa\\Assignment3\\Assignment3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\deniz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\jakob\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
