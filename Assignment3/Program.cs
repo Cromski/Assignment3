@@ -17,7 +17,7 @@ namespace Assignment3
                 Console.WriteLine(item);
             }
             Console.WriteLine("yep");
-            foreach (var element in ys.Filter((x) => x % 7 == 0 || x > 42))
+            foreach (var element in ys.Filter((x) => x % 7 == 0 && x > 42))
             {
                 Console.WriteLine(element);
             }
