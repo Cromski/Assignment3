@@ -5,10 +5,10 @@ namespace Assignment3.Tests
 {
     public class DelegatesTests
     {
-        [Fact]
+        /*[Fact]
         public void Test1()
         {
 
-        }
+        }*/
     }
 }
