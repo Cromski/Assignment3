@@ -6023,34 +6023,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jakob\\.nuget\\packages\\": {}
+    "C:\\Users\\deniz\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jakob\\Documents\\bdsa\\Assignment3\\Assignment3.Tests\\Assignment3.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\deniz\\OneDrive\\Dokumenter\\GitHub\\Assignment3\\Assignment3.Tests\\Assignment3.Tests.csproj",
       "projectName": "Assignment3.Tests",
-      "projectPath": "C:\\Users\\jakob\\Documents\\bdsa\\Assignment3\\Assignment3.Tests\\Assignment3.Tests.csproj",
-      "packagesPath": "C:\\Users\\jakob\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jakob\\Documents\\bdsa\\Assignment3\\Assignment3.Tests\\obj\\",
+      "projectPath": "C:\\Users\\deniz\\OneDrive\\Dokumenter\\GitHub\\Assignment3\\Assignment3.Tests\\Assignment3.Tests.csproj",
+      "packagesPath": "C:\\Users\\deniz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\deniz\\OneDrive\\Dokumenter\\GitHub\\Assignment3\\Assignment3.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jakob\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\deniz\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\jakob\\Documents\\bdsa\\Assignment3\\Assignment3\\Assignment3.csproj": {
-              "projectPath": "C:\\Users\\jakob\\Documents\\bdsa\\Assignment3\\Assignment3\\Assignment3.csproj"
+            "C:\\Users\\deniz\\OneDrive\\Dokumenter\\GitHub\\Assignment3\\Assignment3\\Assignment3.csproj": {
+              "projectPath": "C:\\Users\\deniz\\OneDrive\\Dokumenter\\GitHub\\Assignment3\\Assignment3\\Assignment3.csproj"
             }
           }
         }
