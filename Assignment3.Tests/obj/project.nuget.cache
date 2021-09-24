@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z+EsmNYMOxpvqZE7DoCKf9TsJ5vGNJ4bwRKKtuPKJhYlNjBNUi6XMw8A1aeqldKJ/Suhn54pRM071PDPOM/3cg==",
+  "dgSpecHash": "KBsdqSMsrbB6Vtcmt5vZ65lM9M2zJ6r7KllUufGjdLKu+BVPujHLNOzPVr2BcSI66rMkdZzDckBhukkxbxYnSA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jakob\\Documents\\bdsa\\Assignment3\\Assignment3-main\\Assignment3.Tests\\Assignment3.Tests.csproj",
+  "projectFilePath": "C:\\Users\\jakob\\Documents\\bdsa\\Assignment3\\Assignment3.Tests\\Assignment3.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jakob\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\jakob\\.nuget\\packages\\csvhelper\\27.1.1\\csvhelper.27.1.1.nupkg.sha512",
