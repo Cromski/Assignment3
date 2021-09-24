@@ -6023,34 +6023,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jakob\\.nuget\\packages\\": {}
+    "/Users/danyalyorulmaz/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jakob\\Documents\\bdsa\\Assignment3\\Assignment3.Tests\\Assignment3.Tests.csproj",
+      "projectUniqueName": "/Users/danyalyorulmaz/Desktop/BDSA/Assignment03/Assignment3/Assignment3.Tests/Assignment3.Tests.csproj",
       "projectName": "Assignment3.Tests",
-      "projectPath": "C:\\Users\\jakob\\Documents\\bdsa\\Assignment3\\Assignment3.Tests\\Assignment3.Tests.csproj",
-      "packagesPath": "C:\\Users\\jakob\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jakob\\Documents\\bdsa\\Assignment3\\Assignment3.Tests\\obj\\",
+      "projectPath": "/Users/danyalyorulmaz/Desktop/BDSA/Assignment03/Assignment3/Assignment3.Tests/Assignment3.Tests.csproj",
+      "packagesPath": "/Users/danyalyorulmaz/.nuget/packages/",
+      "outputPath": "/Users/danyalyorulmaz/Desktop/BDSA/Assignment03/Assignment3/Assignment3.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jakob\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/danyalyorulmaz/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\jakob\\Documents\\bdsa\\Assignment3\\Assignment3\\Assignment3.csproj": {
-              "projectPath": "C:\\Users\\jakob\\Documents\\bdsa\\Assignment3\\Assignment3\\Assignment3.csproj"
+            "/Users/danyalyorulmaz/Desktop/BDSA/Assignment03/Assignment3/Assignment3/Assignment3.csproj": {
+              "projectPath": "/Users/danyalyorulmaz/Desktop/BDSA/Assignment03/Assignment3/Assignment3/Assignment3.csproj"
             }
           }
         }
@@ -6101,7 +6099,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
       }
     }
   }
