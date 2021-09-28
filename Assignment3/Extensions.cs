@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace Assignment3
 {
@@ -17,6 +18,9 @@ namespace Assignment3
         }
 
         public static bool IsSecure(this Uri uri) => (uri.Scheme == Uri.UriSchemeHttps);
+
+
+        public static int WordCount(this string sentence) => (Regex.Matches(sentence, "[a-zA-Z]+").Count);
 
 
         public static IEnumerable<T> Filter<T>(this IEnumerable<T> items, Predicate<T> predicate)
