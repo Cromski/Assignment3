@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using System.Collections.Generic;
+using Microsoft.VisualBasic;
 
 namespace Assignment3
 {
@@ -27,7 +28,37 @@ namespace Assignment3
             return query;
         }
 
-        
+        public static int? getyep() {
 
+            var wizards = Wizard.Wizards.Value;
+
+            int? year = (
+                from wizard in wizards
+                where wizard.Name.StartsWith("Darth")
+                orderby wizard.Year
+                select new
+                {
+                    wizard.Year
+                    
+                }).First().Year;
+
+            return year;
+        }
+
+        public static int? yeppp()
+        {
+
+            var wizards = Wizard.Wizards.Value;
+
+            return wizards.Where(wiz => wiz.Name.StartsWith("Darth"))
+                .OrderBy(wiz => wiz.Year).First().Year;
+
+            
+        }
+        
+        
+        
+        
+        
     }
 }
