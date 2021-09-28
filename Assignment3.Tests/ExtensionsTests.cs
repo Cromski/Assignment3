@@ -62,5 +62,19 @@ namespace Assignment3.Tests
 
         }
         
+        
+        [Theory]
+        [InlineData("This is a test for our regEx", 7)]
+        [InlineData("Th1s 1s a t3st for 0ur regEx", 3)]
+        public void WordCount_given_stringWith3Numbers_returns_3(string sentence, int expected)
+        {
+            //Act
+            int actual = sentence.WordCount();
+            
+            //Assert
+            Assert.Equal(expected, actual);
+
+        }
+        
     }
 }
