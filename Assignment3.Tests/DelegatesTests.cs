@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using Xunit;
 using Assignment3;
 
@@ -14,6 +15,22 @@ namespace Assignment3.Tests
         public void Delegates_Number_Equality_Returns_Correct_Value(string text, int number, bool expected) {
 
             Assert.Equal(Delegates.NumberEqualityOperation(text, number), expected);
+        }
+        
+        [Fact]
+        public void PrintReverseString_given_yesthisisinreverse_returns_esrevernisisihtsey()
+        {
+            //Arrange
+            string input = "yesthisisinreverse";
+            var actual = new StringWriter();
+            Console.SetOut(actual);
+            
+            //Act
+            string expected = "esrevernisisihtsey";
+            Delegates.PrintReverseString(input);
+            var actuallyActual = actual.GetStringBuilder().ToString().Trim();
+            //Assert
+            Assert.Equal(expected, actuallyActual);
         }
     }
 }
