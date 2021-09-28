@@ -16,15 +16,9 @@ namespace Assignment3
             }
         }
 
-        public static bool IsSecure(this Uri uri)
-        {
-            if (uri.Scheme == Uri.UriSchemeHttps)
-            {
-                return true;
-            }
-            return false;
-        }
-        
+        public static bool IsSecure(this Uri uri) => (uri.Scheme == Uri.UriSchemeHttps);
+
+
         public static IEnumerable<T> Filter<T>(this IEnumerable<T> items, Predicate<T> predicate)
         {
             foreach (var element in items)
