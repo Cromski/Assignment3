@@ -27,5 +27,9 @@ namespace Assignment3
                 return false;
             }
         };
+
+        public delegate int BinaryOperations(int x, int y);
+
+        public static BinaryOperations Product = (x, y) => x * y;
     }
 }

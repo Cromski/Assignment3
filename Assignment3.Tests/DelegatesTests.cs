@@ -32,5 +32,17 @@ namespace Assignment3.Tests
             //Assert
             Assert.Equal(expected, actuallyActual);
         }
+        
+        [Theory]
+        [InlineData(4, 4, true)]
+        [InlineData(16, 10, true)]
+        public void BinaryOperations_given_2_ints_return_product(int x, int y, bool expected)
+        {
+            //Act
+            bool actual = Delegates.Product(x, y) == x*y ;
+            
+            //Assert
+            Assert.Equal(expected, actual);
+        }
     }
 }
