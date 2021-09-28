@@ -45,5 +45,21 @@ namespace Assignment3.Tests
             //Assert
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void isSecure_given_httpsURL_returns_true()
+        {
+            //Arrange
+            Uri yep = new Uri("https://github.itu.dk/BDSA2021/Assignment3");
+            
+            //Act
+            bool actual = yep.IsSecure();
+            bool expected = true;
+            
+            //Assert
+            Assert.Equal(expected, actual);
+
+        }
+        
     }
 }
