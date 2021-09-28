@@ -3,8 +3,7 @@ using System;
 namespace Assignment3
 {
     public static class Delegates
-    {
-        
+    {          
         public delegate void ReverseOrder(string originalString);
 
         public static ReverseOrder PrintReverseString = (s) =>
@@ -14,7 +13,19 @@ namespace Assignment3
                 Console.Write(s[i]);
             }
         };
-            
-        
+
+        public delegate bool NumberEquality(string text, int number);
+
+        public static NumberEquality NumberEqualityOperation = (text, number) => 
+        {
+            try 
+            {
+                return Int64.Parse(text.Trim()) == number;
+            } 
+            catch(Exception e) 
+            {
+                return false;
+            }
+        };
     }
 }
