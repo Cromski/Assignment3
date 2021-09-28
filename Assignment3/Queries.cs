@@ -1,7 +1,6 @@
 using System;
 using System.Linq;
 using System.Collections.Generic;
-using Microsoft.VisualBasic;
 
 namespace Assignment3
 {
@@ -55,10 +54,60 @@ namespace Assignment3
 
             
         }
+
+        public static object testtestse() {
+
+            var wizards = Wizard.Wizards.Value;
+
+
+            var query = from wizard in wizards
+                        where wizard.Medium.StartsWith("Harry Potter")
+                        group wizard by new {
+                            wizard.Name,
+                            wizard.Year
+                        } into g
+                        select new {
+                            Name = g.Key.Name,
+                            Year = g.Key.Year
+                        };
+
+            
+            return query;
+        }
         
-        
-        
-        
-        
+
+        public static IEnumerable<string> getWizardNamesSortedLINQ() {
+
+            var wizards = Wizard.Wizards.Value;
+
+            var query = from wizard in wizards
+                        orderby wizard.Creator descending, wizard.Name descending
+                        group wizard by wizard.Name into g
+                        select new {
+                            Name = g.Key
+                        };
+
+            foreach(var element in query) 
+            {
+                yield return element.Name;
+            }    
+        }
+
+        public static IEnumerable<string> getWizardNamesSorted() {
+
+            var wizards = Wizard.Wizards.Value;
+
+            var query = wizards.OrderByDescending(wiz => wiz.Creator)
+                               .ThenByDescending(wiz => wiz.Name)
+                               .GroupBy(wiz => wiz.Name)
+                               .Select(wiz => new {
+                                   Name = wiz.Key
+                               });
+            
+            foreach(var element in query) 
+            {
+                yield return element.Name;
+            }    
+        }
     }
 }
