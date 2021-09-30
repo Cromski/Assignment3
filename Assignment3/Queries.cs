@@ -7,27 +7,25 @@ namespace Assignment3
     public class Queries
     {
 
+        private static IEnumerable<Wizard> wizards = Wizard.Wizards.Value;
+
         /*
             ASSIGNMENT 3.1
         */
 
-        public static IEnumerable<object> GetWizardsByRowlingLINQ() {
-
-            var wizards = Wizard.Wizards.Value;
-
+        public static IEnumerable<object> GetWizardsByRowlingLINQ() 
+        {
             var query = from wizard in wizards
                         where wizard.Creator == "Rowling"
-                        select new {Name = wizard.Name};
+                        select new {wizard.Name};
 
             return query;
         }
 
-        public static IEnumerable<object> GetWizardsByRowling() {
-
-            var wizards = Wizard.Wizards.Value;
-
+        public static IEnumerable<object> GetWizardsByRowling() 
+        {
             var query = wizards.Where(w => w.Creator == "Rowling")
-                               .Select(w => new {Name = w.Name});
+                               .Select(w => new {w.Name});
             
             return query;
         }
@@ -36,10 +34,8 @@ namespace Assignment3
             ASSIGNMENT 3.2
         */
 
-        public static int? GetFirstYearSithLordWasIntroducedLINQ() {
-
-            var wizards = Wizard.Wizards.Value;
-
+        public static int? GetFirstYearSithLordWasIntroducedLINQ() 
+        {
             int? year = (
                 from wizard in wizards
                 where wizard.Name.StartsWith("Darth")
@@ -55,23 +51,17 @@ namespace Assignment3
 
         public static int? GetFirstYearSithLordWasIntroduced()
         {
-
-            var wizards = Wizard.Wizards.Value;
-
             return wizards.Where(wiz => wiz.Name.StartsWith("Darth"))
-                .OrderBy(wiz => wiz.Year).First().Year;
-
-            
+                .OrderBy(wiz => wiz.Year)
+                .First().Year;
         }
 
         /*
             ASSIGNMENT 3.3
         */
 
-        public static object testtestse() {
-
-            var wizards = Wizard.Wizards.Value;
-
+        public static object testtestse() 
+        {
             var query = from wizard in wizards
                         where wizard.Medium.StartsWith("Harry Potter")
                         group wizard by new {
@@ -90,10 +80,8 @@ namespace Assignment3
         /*
             ASSIGNMENT 3.4
         */
-        public static IEnumerable<string> GetWizardsByCreatorAndNameReversedLINQ() {
-
-            var wizards = Wizard.Wizards.Value;
-
+        public static IEnumerable<string> GetWizardsByCreatorAndNameReversedLINQ() 
+        {
             var query = from wizard in wizards
                         orderby wizard.Creator descending, wizard.Name descending
                         group wizard by wizard.Name into g
@@ -107,10 +95,8 @@ namespace Assignment3
             }    
         }
 
-        public static IEnumerable<string> GetWizardsByCreatorAndNameReversed() {
-
-            var wizards = Wizard.Wizards.Value;
-
+        public static IEnumerable<string> GetWizardsByCreatorAndNameReversed() 
+        {
             var query = wizards.OrderByDescending(wiz => wiz.Creator)
                                .ThenByDescending(wiz => wiz.Name)
                                .GroupBy(wiz => wiz.Name)
