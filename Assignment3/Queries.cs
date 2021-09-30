@@ -6,7 +6,12 @@ namespace Assignment3
 {
     public class Queries
     {
-        public static IEnumerable<object> getWizardsByRowlingLINQ() {
+
+        /*
+            ASSIGNMENT 3.1
+        */
+
+        public static IEnumerable<object> GetWizardsByRowlingLINQ() {
 
             var wizards = Wizard.Wizards.Value;
 
@@ -17,7 +22,7 @@ namespace Assignment3
             return query;
         }
 
-        public static IEnumerable<object> getWizardsByRowling() {
+        public static IEnumerable<object> GetWizardsByRowling() {
 
             var wizards = Wizard.Wizards.Value;
 
@@ -27,7 +32,11 @@ namespace Assignment3
             return query;
         }
 
-        public static int? getyep() {
+        /*
+            ASSIGNMENT 3.2
+        */
+
+        public static int? GetFirstYearSithLordWasIntroducedLINQ() {
 
             var wizards = Wizard.Wizards.Value;
 
@@ -44,7 +53,7 @@ namespace Assignment3
             return year;
         }
 
-        public static int? yeppp()
+        public static int? GetFirstYearSithLordWasIntroduced()
         {
 
             var wizards = Wizard.Wizards.Value;
@@ -55,10 +64,13 @@ namespace Assignment3
             
         }
 
+        /*
+            ASSIGNMENT 3.3
+        */
+
         public static object testtestse() {
 
             var wizards = Wizard.Wizards.Value;
-
 
             var query = from wizard in wizards
                         where wizard.Medium.StartsWith("Harry Potter")
@@ -74,9 +86,11 @@ namespace Assignment3
             
             return query;
         }
-        
 
-        public static IEnumerable<string> getWizardNamesSortedLINQ() {
+        /*
+            ASSIGNMENT 3.4
+        */
+        public static IEnumerable<string> GetWizardsByCreatorAndNameReversedLINQ() {
 
             var wizards = Wizard.Wizards.Value;
 
@@ -93,7 +107,7 @@ namespace Assignment3
             }    
         }
 
-        public static IEnumerable<string> getWizardNamesSorted() {
+        public static IEnumerable<string> GetWizardsByCreatorAndNameReversed() {
 
             var wizards = Wizard.Wizards.Value;
 
