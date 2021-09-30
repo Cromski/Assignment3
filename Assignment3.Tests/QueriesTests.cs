@@ -6,20 +6,64 @@ namespace Assignment3.Tests
 {
     public class QueriesTests
     {
+        /*
+            Assignment 3.2
+        */
         [Fact]
-        public void getWizardsByRowlingLINQ_given_WizardsValue()
+        public void Queries_get_first_sith_lord_returns_1977() 
         {
-            //Arrange
-            var wizards = Wizard.Wizards.Value;
-            IEnumerable<object> expected = new List<object>{"Harry Potter", "Harry Potter", "Dumbledore"};
-            IEnumerable<object> actual;
+            Assert.Equal(1977, Queries.GetFirstYearSithLordWasIntroduced());
+        }
 
-            //Act
-            actual = Queries.getWizardsByRowling();
+        [Fact]
+        public void Queries_get_first_sith_lord_returns_1977_LINQ() 
+        {
+            Assert.Equal(1977, Queries.GetFirstYearSithLordWasIntroducedLINQ());
+        }
 
-            //Assert
-            Assert.Equal(expected, actual);
+        /*
+            Assignment 3.4
+        */
+        [Fact]
+        public void Queries_get_wizards_by_reverse_order_returns_correctly() 
+        {
+            string[] expected = {
+                "The Flash",
+                "Batman",
+                "Iron Man",
+                "Captain America",
+                "Sauron",
+                "Gandalf",
+                "Frodo",
+                "Harry Potter",
+                "Dumbledore",
+                "Luke Skywalker",
+                "Darth Vader",
+                "Darth Snoke",
+            };
 
+            Assert.Equal(expected, Queries.GetWizardsByCreatorAndNameReversed());
+        }
+
+        [Fact]
+        public void Queries_get_wizards_by_reverse_order_returns_correctly_LINQ() 
+        {
+            string[] expected = {
+                "The Flash",
+                "Batman",
+                "Iron Man",
+                "Captain America",
+                "Sauron",
+                "Gandalf",
+                "Frodo",
+                "Harry Potter",
+                "Dumbledore",
+                "Luke Skywalker",
+                "Darth Vader",
+                "Darth Snoke",
+            };
+
+            Assert.Equal(expected, Queries.GetWizardsByCreatorAndNameReversedLINQ());
         }
     }
 }
