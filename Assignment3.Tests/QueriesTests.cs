@@ -65,5 +65,34 @@ namespace Assignment3.Tests
 
             Assert.Equal(expected, Queries.GetWizardsByCreatorAndNameReversedLINQ());
         }
+        
+        [Fact]
+        public void getWizardsByRowlingLINQ_given_WizardsValue()
+        {
+            //Arrange
+            IEnumerable<object> expected = new []{new {Name = "Harry Potter"}, new {Name = "Harry Potter"}, new {Name = "Dumbledore"}};
+            IEnumerable<object> actual;
+
+            //Act
+            actual = Queries.GetWizardsByRowlingLINQ();
+
+            //Assert
+            Assert.Equal(expected, actual);
+        }
+        
+        [Fact]
+        public void getWizardsByRowling_given_WizardsValue()
+        {
+            //Arrange
+            IEnumerable<object> expected = new []{new {Name = "Harry Potter"}, new {Name = "Harry Potter"}, new {Name = "Dumbledore"}};
+            IEnumerable<object> actual;
+
+            //Act
+            actual = Queries.GetWizardsByRowling();
+
+            //Assert
+            Assert.Equal(expected, actual);
+        }
+        
     }
 }
