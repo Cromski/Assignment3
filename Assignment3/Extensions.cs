@@ -20,7 +20,7 @@ namespace Assignment3
         public static bool IsSecure(this Uri uri) => (uri.Scheme == Uri.UriSchemeHttps);
 
 
-        public static int WordCount(this string sentence) => (Regex.Matches(sentence, "[a-zA-Z]+").Count);
+        public static int WordCount(this string sentence) => (Regex.Matches(sentence, @"(?<name>\b[^\s\d]+\b)").Count);
 
 
         public static IEnumerable<T> Filter<T>(this IEnumerable<T> items, Predicate<T> predicate)
@@ -31,7 +31,5 @@ namespace Assignment3
                     yield return element;
             }
         }
-
-
     }
 }

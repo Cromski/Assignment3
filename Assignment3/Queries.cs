@@ -13,19 +13,19 @@ namespace Assignment3
             ASSIGNMENT 3.1
         */
 
-        public static IEnumerable<object> GetWizardsByRowlingLINQ() 
+        public static IEnumerable<string> GetWizardsByRowlingLINQ() 
         {
             var query = from wizard in wizards
-                        where wizard.Creator == "Rowling"
-                        select new {wizard.Name};
+                        where wizard.Creator == "J.K. Rowling"
+                        select wizard.Name;
 
             return query;
         }
 
-        public static IEnumerable<object> GetWizardsByRowling() 
+        public static IEnumerable<string> GetWizardsByRowling() 
         {
-            var query = wizards.Where(w => w.Creator == "Rowling")
-                               .Select(w => new {w.Name});
+            var query = wizards.Where(w => w.Creator == "J.K. Rowling")
+                               .Select(w => w.Name);
             
             return query;
         }
@@ -59,7 +59,7 @@ namespace Assignment3
         /*
             ASSIGNMENT 3.3
         */
-        public static IEnumerable<object> GetUniqueListOfHarryPotterWizardsLINQ() 
+        public static IEnumerable<(string, int?)> GetUniqueListOfHarryPotterWizardsLINQ() 
         {
             var query = from wizard in wizards
                         where wizard.Medium.StartsWith("Harry Potter")
@@ -67,23 +67,17 @@ namespace Assignment3
                             wizard.Name,
                             wizard.Year
                         } into g
-                        select new {
-                            Name = g.Key.Name,
-                            Year = g.Key.Year
-                        };
+                        select (g.Key.Name, g.Key.Year);
 
             
             return query.Distinct();
         }
 
-        public static IEnumerable<object> GetUniqueListOfHarryPotterWizard() 
+        public static IEnumerable<(string, int?)> GetUniqueListOfHarryPotterWizards() 
         {
             var query = wizards.Where(wiz => wiz.Medium.StartsWith("Harry Potter"))
                                .GroupBy(wiz => new { wiz.Name, wiz.Year})
-                               .Select(g => new {
-                                    Name = g.Key.Name,
-                                    Year = g.Key.Year
-                               })
+                               .Select(g => (g.Key.Name, g.Key.Year))
                                .Distinct();
             
             return query;

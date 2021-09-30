@@ -13,13 +13,12 @@ namespace Assignment3.Tests
         public void Queries_getWizardsByRowlingLINQ_given_WizardsValue()
         {
             //Arrange
-            IEnumerable<object> expected = new []{
-                new {Name = "Harry Potter"}, 
-                new {Name = "Harry Potter"}, 
-                new {Name = "Dumbledore"}
+            IEnumerable<string> expected = new []{
+                "Harry Potter", 
+                "Harry Potter", 
+                "Dumbledore"
             };
-
-            IEnumerable<object> actual;
+            IEnumerable<string> actual;
 
             //Act
             actual = Queries.GetWizardsByRowlingLINQ();
@@ -32,12 +31,12 @@ namespace Assignment3.Tests
         public void Queries_getWizardsByRowling_given_WizardsValue()
         {
             //Arrange
-            IEnumerable<object> expected = new []{
-                new {Name = "Harry Potter"}, 
-                new {Name = "Harry Potter"}, 
-                new {Name = "Dumbledore"}
+            IEnumerable<string> expected = new []{
+                "Harry Potter", 
+                "Harry Potter", 
+                "Dumbledore"
             };
-            IEnumerable<object> actual;
+            IEnumerable<string> actual;
 
             //Act
             actual = Queries.GetWizardsByRowling();
@@ -68,16 +67,15 @@ namespace Assignment3.Tests
         public void Queries_get_unique_harry_potter_wizars_name_and_year_returns_correctly()
         {
             //Arrange
-            IEnumerable<object> expected = new []{
-                new {Name = "Harry Potter", Year = 2002}, 
-                new {Name = "Harry Potter", Year = 2005}, 
-                new {Name = "Dumbledore", Year = 2002}
+            IEnumerable<(string, int?)> expected = new []{
+                ("Harry Potter", (int?) 2002), 
+                ("Harry Potter", (int?) 2005), 
+                ("Dumbledore", (int?) 2002)
             };
-
-            IEnumerable<object> actual;
+            IEnumerable<(string, int?)> actual;
 
             //Act
-            actual = Queries.GetUniqueListOfHarryPotterWizard();
+            actual = Queries.GetUniqueListOfHarryPotterWizards();
 
             //Assert
             Assert.Equal(expected, actual);
@@ -87,13 +85,12 @@ namespace Assignment3.Tests
         public void Queries_get_unique_harry_potter_wizars_name_and_year_returns_correctly_LINQ()
         {
             //Arrange
-            IEnumerable<object> expected = new []{
-                new {Name = "Harry Potter", Year = 2002}, 
-                new {Name = "Harry Potter", Year = 2005}, 
-                new {Name = "Dumbledore", Year = 2002}
+            IEnumerable<(string, int?)> expected = new []{
+                ("Harry Potter", (int?) 2002), 
+                ("Harry Potter", (int?) 2005), 
+                ("Dumbledore",  (int?) 2002)
             };
-
-            IEnumerable<object> actual;
+            IEnumerable<(string, int?)> actual;
 
             //Act
             actual = Queries.GetUniqueListOfHarryPotterWizardsLINQ();
