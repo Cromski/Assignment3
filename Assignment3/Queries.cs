@@ -59,8 +59,7 @@ namespace Assignment3
         /*
             ASSIGNMENT 3.3
         */
-
-        public static object testtestse() 
+        public static object GetUniqueListOfHarryPotterWizardsLINQ() 
         {
             var query = from wizard in wizards
                         where wizard.Medium.StartsWith("Harry Potter")
@@ -73,6 +72,19 @@ namespace Assignment3
                             Year = g.Key.Year
                         };
 
+            
+            return query.Distinct();
+        }
+
+        public static object GetUniqueListOfHarryPotterWizard() 
+        {
+            var query = wizards.Where(wiz => wiz.Medium.StartsWith("Harry Potter"))
+                               .GroupBy(wiz => new { wiz.Name, wiz.Year})
+                               .Select(g => new {
+                                    Name = g.Key.Name,
+                                    Year = g.Key.Year
+                               })
+                               .Distinct();
             
             return query;
         }
