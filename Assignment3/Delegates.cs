@@ -22,7 +22,7 @@ namespace Assignment3
             {
                 return Int64.Parse(text.Trim()) == number;
             } 
-            catch(Exception e) 
+            catch(Exception) 
             {
                 return false;
             }
